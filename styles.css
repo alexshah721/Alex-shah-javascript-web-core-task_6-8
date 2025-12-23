@@ -45,8 +45,11 @@ body {
       margin-bottom: 20px;
    }
 
+   .main-text {
+      padding-left: 8px;
+   }
+
    .main__text_mobile {
-      padding-left: 10px;
       width: 100%;
    }
 
@@ -166,8 +169,11 @@ body {
       margin-bottom: 20px;
    }
 
-   .main__text_tablet {
+   .main-text {
       padding-left: 8px;
+   }
+
+   .main__text_tablet {
       width: 100%;
    }
 
@@ -256,7 +262,7 @@ body {
 }
 
 /* для компьютеров */
-@media (min-width: 770px) and (max-width: 1400px) {
+@media (min-width: 770px) and (max-width: 1700px) {
 
    .header,
    .header__item {
@@ -316,6 +322,7 @@ body {
       height: 40px;
       overflow-x: auto;
       white-space: nowrap;
+      justify-content: space-evenly;
    }
 
    .nav__item,
