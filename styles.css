@@ -68,6 +68,10 @@ body {
       width: fit-content;
    }
 
+   .main__supportbtns_desktop {
+      display: none;
+   }
+
    .nav {
       display: flex;
       max-width: 320px;
@@ -76,8 +80,9 @@ body {
       white-space: nowrap;
    }
 
-   .nav__item {
-      margin:0px 10px;
+   .nav__item,
+   .nav__item_mobile {
+      margin: 0px 10px;
       border: none;
       background-color: rgba(255, 255, 255, 0);
       color: rgb(134, 134, 134);
@@ -86,9 +91,14 @@ body {
       cursor: pointer;
    }
 
+   .header__item_desktop {
+      display: none;
+   }
+
    .nav__item:hover {
       border: 3px solid rgb(186, 247, 255);
       border-radius: 5px;
+      background-color: rgba(255, 255, 255, 0.7);
 
    }
 
@@ -96,11 +106,21 @@ body {
       border: 3px solid rgb(186, 247, 255);
       border-radius: 5px;
       outline: none;
+      background-color: rgba(255, 255, 255, 0.7);
    }
 
    .nav::-webkit-scrollbar {
       display: none;
    }
+
+   .nav__item_desktop {
+      display: none;
+   }
+
+   .reviews {
+      display: none;
+   }
+
 
 }
 
@@ -165,6 +185,23 @@ body {
       width: fit-content;
    }
 
+   .main-text__img {
+      display: flex;
+      justify-content: end;
+      height: 200px;
+      width: auto;
+   }
+
+   .main-text {
+      display: flex;
+      justify-content: start;
+      padding-top: 20px;
+   }
+
+   .main__supportbtns_desktop {
+      display: none;
+   }
+
    .nav {
       display: flex;
       min-width: 321px;
@@ -174,8 +211,9 @@ body {
       white-space: nowrap;
    }
 
-   .nav__item {
-      margin:0px 10px;
+   .nav__item,
+   .nav__item_tablet {
+      margin: 0px 10px;
       border: none;
       background-color: rgba(255, 255, 255, 0);
       color: rgb(134, 134, 134);
@@ -184,9 +222,18 @@ body {
       cursor: pointer;
    }
 
+   .nav__item_desktop {
+      display: none;
+   }
+
+   .header__item_desktop {
+      display: none;
+   }
+
    .nav__item:hover {
       border: 3px solid rgb(186, 247, 255);
       border-radius: 5px;
+      background-color: rgba(255, 255, 255, 0.7);
 
    }
 
@@ -194,21 +241,128 @@ body {
       border: 3px solid rgb(186, 247, 255);
       border-radius: 5px;
       outline: none;
+      background-color: rgba(255, 255, 255, 0.7);
    }
 
    .nav::-webkit-scrollbar {
       display: none;
    }
 
+   .reviews {
+      display: none;
+   }
+
+
+}
+
+/* для компьютеров */
+@media (min-width: 770px) and (max-width: 1400px) {
+
+   .header,
+   .header__item {
+      display: none;
+   }
+
+   h1 {
+      border-left: 4px solid rgb(0, 238, 238);
+      padding-left: 10px;
+      margin-bottom: 20px;
+   }
+
+   .main-title-supportbtns {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-right: 20px;
+   }
+
+   .main__supportbtns_desktop {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      font-weight: 500;
+      cursor: pointer;
+   }
+
+   .main__readmore {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 500;
+      padding-left: 20px;
+      cursor: pointer;
+      width: fit-content;
+   }
+
    .main-text__img {
       display: flex;
       justify-content: end;
-      height: 200px;
+      height: 300px;
+      width: auto;
+      padding-left: 20px;
    }
 
    .main-text {
       display: flex;
       justify-content: start;
       padding-top: 20px;
+      padding-left: 10px;
+
    }
+
+   .nav {
+      display: flex;
+      width: 100%;
+      height: 40px;
+      overflow-x: auto;
+      white-space: nowrap;
+   }
+
+   .nav__item,
+   .nav__item_desktop {
+      padding: 0 10px;
+      margin-left: 10px;
+      border: none;
+      background-color: rgba(255, 255, 255, 0);
+      color: rgb(134, 134, 134);
+      font-size: 18px;
+      font-family: 'TT Lakes';
+      cursor: pointer;
+   }
+
+   .nav__item:hover,
+   .nav__item_desktop:hover {
+      border: 3px solid rgb(186, 247, 255);
+      border-radius: 5px;
+      background-color: rgba(255, 255, 255, 0.7);
+
+   }
+
+   .nav__item:focus,
+   .nav__item_desktop:focus {
+      border: 3px solid rgb(186, 247, 255);
+      border-radius: 5px;
+      outline: none;
+      background-color: rgba(255, 255, 255, 0.7);
+   }
+
+   .nav::-webkit-scrollbar {
+      display: none;
+   }
+
+   .nav__item_tablet,
+   .nav__item_mobile {
+      display: none;
+   }
+
+   .reviews {
+      color: rgb(134, 134, 134);
+      font-size: large;
+      margin-left: 20px;
+      cursor: pointer;
+      width: fit-content;
+   }
+
+
 }
