@@ -7,15 +7,15 @@ body {
 }
 
 /* для смартфонов */
-@media (max-width: 320px) and (min-width: 0px) {
+@media (min-width: 1px) and (max-width: 420px) {
    .header {
+      justify-content: space-between;
+      display: flex;
+      align-items: center;
       border-bottom: 2px solid rgba(191, 246, 253, 0.525);
       padding-bottom: 10px;
       padding-top: 10px;
       background-color: white;
-      align-items: center;
-      justify-content: space-evenly;
-      display: flex;
       width: 100%;
 
    }
@@ -25,6 +25,15 @@ body {
       display: flex;
       align-items: center;
       gap: 16px;
+
+   }
+
+   .header__left {
+      margin-left: 15px;
+   }
+
+   .header__right {
+      margin-right: 15px;
    }
 
    .header__item_tablet {
@@ -46,7 +55,11 @@ body {
    }
 
    .main-text {
-      padding-left: 8px;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      padding-left: 10px;
+      padding-top: 10px;
    }
 
    .main__text_mobile {
@@ -64,11 +77,21 @@ body {
    .main__readmore {
       display: flex;
       align-items: center;
-      gap: 10px;
       font-weight: 500;
-      padding-left: 20px;
+      font-size: 18px;
       cursor: pointer;
       width: fit-content;
+   }
+
+   .main-text__img {
+      display: flex;
+      justify-content: center;
+   }
+
+   .main-text__img img {
+      height: 100%;
+      width: 100%;
+      border-radius: 5px;
    }
 
    .main__supportbtns_desktop {
@@ -77,15 +100,17 @@ body {
 
    .nav {
       display: flex;
-      max-width: 320px;
-      height: 40px;
+      align-items: center;
+      max-width: 420px;
+      height: 50px;
       overflow-x: auto;
       white-space: nowrap;
    }
 
    .nav__item,
    .nav__item_mobile {
-      margin: 0px 10px;
+      margin: 0 10px;
+      padding: 8px 10px;
       border: none;
       background-color: rgba(255, 255, 255, 0);
       color: rgb(134, 134, 134);
@@ -100,14 +125,14 @@ body {
 
    .nav__item:hover {
       border: 3px solid rgb(186, 247, 255);
-      border-radius: 5px;
+      border-radius: 8px;
       background-color: rgba(255, 255, 255, 0.7);
 
    }
 
    .nav__item:focus {
       border: 3px solid rgb(186, 247, 255);
-      border-radius: 5px;
+      border-radius: 8px;
       outline: none;
       background-color: rgba(255, 255, 255, 0.7);
    }
@@ -128,7 +153,7 @@ body {
 }
 
 /* для планшетов */
-@media (min-width:321px) and (max-width:769px) {
+@media (min-width:421px) and (max-width:769px) {
    .header {
       border-bottom: 2px solid rgba(191, 246, 253, 0.525);
       padding-bottom: 10px;
@@ -170,7 +195,8 @@ body {
    }
 
    .main-text {
-      padding-left: 8px;
+      padding-left: 10px;
+      justify-content: start;
    }
 
    .main__text_tablet {
@@ -184,9 +210,8 @@ body {
    .main__readmore {
       display: flex;
       align-items: center;
-      gap: 10px;
       font-weight: 500;
-      padding-left: 20px;
+      font-size: 18px;
       cursor: pointer;
       width: fit-content;
    }
@@ -196,12 +221,16 @@ body {
       justify-content: end;
       height: 200px;
       width: auto;
+      padding-left: 20px;
+   }
+
+   .main-text__img img {
+      border-radius: 5px;
    }
 
    .main-text {
       display: flex;
       justify-content: start;
-      padding-top: 20px;
    }
 
    .main__supportbtns_desktop {
@@ -210,16 +239,19 @@ body {
 
    .nav {
       display: flex;
-      min-width: 321px;
+      align-items: center;
+      margin-bottom: 20px;
+      min-width: 421px;
       max-width: 770px;
-      height: 40px;
+      height: 50px;
       overflow-x: auto;
       white-space: nowrap;
    }
 
    .nav__item,
    .nav__item_tablet {
-      margin: 0px 10px;
+      margin: 0 10px;
+      padding: 8px 10px;
       border: none;
       background-color: rgba(255, 255, 255, 0);
       color: rgb(134, 134, 134);
@@ -238,14 +270,14 @@ body {
 
    .nav__item:hover {
       border: 3px solid rgb(186, 247, 255);
-      border-radius: 5px;
+      border-radius: 8px;
       background-color: rgba(255, 255, 255, 0.7);
 
    }
 
    .nav__item:focus {
       border: 3px solid rgb(186, 247, 255);
-      border-radius: 5px;
+      border-radius: 8px;
       outline: none;
       background-color: rgba(255, 255, 255, 0.7);
    }
@@ -294,9 +326,8 @@ body {
    .main__readmore {
       display: flex;
       align-items: center;
-      gap: 10px;
       font-weight: 500;
-      padding-left: 10px;
+      font-size: 18px;
       cursor: pointer;
       width: fit-content;
    }
@@ -306,20 +337,25 @@ body {
       justify-content: end;
       height: 300px;
       width: auto;
-      padding-left: 20px;
+      padding-left: 40px;
+   }
+
+   .main-text__img img {
+      border-radius: 10px;
    }
 
    .main-text {
       display: flex;
       justify-content: start;
-      padding-left: 10px;
+      padding-left: 15px;
 
    }
 
    .nav {
       display: flex;
+      align-items: center;
       width: 100%;
-      height: 40px;
+      height: 50px;
       overflow-x: auto;
       white-space: nowrap;
       justify-content: space-evenly;
@@ -327,8 +363,8 @@ body {
 
    .nav__item,
    .nav__item_desktop {
-      padding: 0 10px;
-      margin-left: 10px;
+      margin: 0 10px;
+      padding: 8px 10px;
       border: none;
       background-color: rgba(255, 255, 255, 0);
       color: rgb(134, 134, 134);
@@ -340,7 +376,7 @@ body {
    .nav__item:hover,
    .nav__item_desktop:hover {
       border: 3px solid rgb(186, 247, 255);
-      border-radius: 5px;
+      border-radius: 8px;
       background-color: rgba(255, 255, 255, 0.7);
 
    }
@@ -348,7 +384,7 @@ body {
    .nav__item:focus,
    .nav__item_desktop:focus {
       border: 3px solid rgb(186, 247, 255);
-      border-radius: 5px;
+      border-radius: 8px;
       outline: none;
       background-color: rgba(255, 255, 255, 0.7);
    }
