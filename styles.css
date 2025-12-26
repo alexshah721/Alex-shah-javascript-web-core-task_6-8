@@ -119,6 +119,12 @@ body {
       cursor: pointer;
    }
 
+   .nav__item_checked {
+      border: 3px solid rgb(0, 238, 238);
+      border-radius: 8px;
+      background-color: rgba(255, 255, 255, 0.7);
+   }
+
    .header__item_desktop {
       display: none;
    }
@@ -260,6 +266,12 @@ body {
       cursor: pointer;
    }
 
+   .nav__item_checked {
+      border: 3px solid rgb(0, 238, 238);
+      border-radius: 8px;
+      background-color: rgba(255, 255, 255, 0.7);
+   }
+
    .nav__item_desktop {
       display: none;
    }
@@ -373,6 +385,12 @@ body {
       cursor: pointer;
    }
 
+   .nav__item_checked_desktop {
+      border: 3px solid rgb(0, 238, 238);
+      border-radius: 8px;
+      background-color: rgba(255, 255, 255, 0.7);
+   }
+
    .nav__item:hover,
    .nav__item_desktop:hover {
       border: 3px solid rgb(186, 247, 255);
@@ -397,6 +415,7 @@ body {
    .nav__item_mobile {
       display: none;
    }
+
 
    .reviews {
       color: rgb(134, 134, 134);
