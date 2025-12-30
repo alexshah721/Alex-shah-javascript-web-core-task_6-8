@@ -6,7 +6,7 @@ body {
    background-color: rgba(222, 222, 222, 0.353);
 }
 
-/* для смартфонов */
+/* для смартфонов */ 
 @media (min-width: 1px) and (max-width: 420px) {
    .header {
       justify-content: space-between;
@@ -120,7 +120,7 @@ body {
    }
 
    .nav__item_checked {
-      border: 3px solid rgb(0, 238, 238);
+      border: 3px solid  rgb(186, 247, 255);
       border-radius: 8px;
       background-color: rgba(255, 255, 255, 0.7);
    }
@@ -267,7 +267,7 @@ body {
    }
 
    .nav__item_checked {
-      border: 3px solid rgb(0, 238, 238);
+      border: 3px solid  rgb(186, 247, 255);
       border-radius: 8px;
       background-color: rgba(255, 255, 255, 0.7);
    }
@@ -386,7 +386,7 @@ body {
    }
 
    .nav__item_checked_desktop {
-      border: 3px solid rgb(0, 238, 238);
+      border: 3px solid  rgb(186, 247, 255);
       border-radius: 8px;
       background-color: rgba(255, 255, 255, 0.7);
    }
